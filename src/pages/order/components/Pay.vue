@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { Toast } from 'vant';
 import { SubmitBar } from 'vant';
 export default {
     name:'Pay',
@@ -17,7 +18,7 @@ export default {
     },
     methods:{
         handleSubmitClick:function(){
-            Toast('正在支付');
+            Toast('已提交支付');
         }
     }
 }
