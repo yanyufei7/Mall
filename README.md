@@ -1,6 +1,6 @@
 
-# fruitmall
-> An application to buy fruit
+# 移动商城
+> 网上购物商城
 ## 构建安装程序
 ``` bash
 # 安装依赖
