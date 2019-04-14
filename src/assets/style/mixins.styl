@@ -1,0 +1,26 @@
+//溢出显示省略号
+ellipsis()
+    overflow :hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+//溢出换行
+wrap()
+    clear: both; /* 清除左右浮动 */
+    word-break: break-word; /* 文本行的任意字内断开 */
+    word-wrap: break-word; /* IE */
+    white-space: -moz-pre-wrap; /* Mozilla */  
+    white-space: -hp-pre-wrap; /* HP printers */   
+    white-space: -o-pre-wrap; /* Opera 7 */  
+    white-space: -pre-wrap; /* Opera 4-6 */   
+    white-space: pre; /* CSS2 */  
+    white-space: pre-wrap; /* CSS 2.1 */ 
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+//限定2行，溢出显示省略号
+twoellipsis()
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow:hidden
+    text-overflow:ellipsis
+    display:-webkit-box
+    -webkit-box-orient:vertical
+    -webkit-line-clamp:2

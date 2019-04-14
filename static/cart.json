@@ -1,0 +1,23 @@
+{
+	"ret": true,
+	"data":{
+		    "allSum":10960,
+            "cartlist":[{
+                "id":"10001",
+                "name":"小米9 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":1990,
+                "num":1,
+                "sum":1990,
+                "checked":true
+            },{
+                "id":"10002",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "num":3,
+                "sum":8970,
+                "checked":true
+            }]
+    }
+}

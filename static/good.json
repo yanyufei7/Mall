@@ -1,0 +1,199 @@
+{
+    "ret": true,
+    "data": {
+        "info": {
+            "price": 1990,
+            "preprice": 2990,
+            "sell": 999,
+            "title": "小米9 SE骁龙712超广角4800万三摄拍照智能手机",
+            "imgList": [
+                {
+                    "id": "1001",
+                    "imgUrl": "static/images/xiaomi/xiaomi01.jpg"
+                },
+                {
+                    "id": "1002",
+                    "imgUrl": "static/images/xiaomi/xiaomi02.jpeg"
+                },
+                {
+                    "id": "1003",
+                    "imgUrl": "static/images/xiaomi/xiaomi03.jpeg"
+                },
+                {
+                    "id": "1004",
+                    "imgUrl": "static/images/xiaomi/xiaomi04.jpg"
+                }
+            ],
+            "detailImgList":[{
+                "id":"201",
+                "imgUrl":"static/images/xiaomi/detail/detail_01.jpg"
+            },{
+                "id":"202",
+                "imgUrl":"static/images/xiaomi/detail/detail_02.jpg"
+            },{
+                "id":"203",
+                "imgUrl":"static/images/xiaomi/detail/detail_03.jpg"
+            },{
+                "id":"204",
+                "imgUrl":"static/images/xiaomi/detail/detail_04.jpg"
+            },{
+                "id":"205",
+                "imgUrl":"static/images/xiaomi/detail/detail_05.jpg"
+            },{
+                "id":"206",
+                "imgUrl":"static/images/xiaomi/detail/detail_06.jpg"
+            }]
+        },
+        "comment": {
+            "count": 2056,
+            "list": [
+                {
+                    "id": 10001,
+                    "username": "流星雨",
+                    "userImg": "static/images/头像 男孩.png",
+                    "content": "手机收到了，质量很好，必须的五星好评，祝福商家事事顺心，发大财"
+                },
+                {
+                    "id": 10002,
+                    "username": "小猫007",
+                    "userImg": "static/images/头像 男孩.png",
+                    "content": "手机收到了，质量很好，必须的五星好评，祝福商家事事顺心，发大财"
+                },
+                {
+                    "id": 10003,
+                    "username": "曹操",
+                    "userImg": "static/images/头像 男孩.png",
+                    "content": "手机收到了，质量很好，必须的五星好评，祝福商家事事顺心，发大财"
+                }
+            ]
+        },
+        "skuData": {
+            "sku": {
+                "tree": [
+                    {
+                        "k": "颜色",
+                        "v": [
+                            {
+                                "id": "1001",
+                                "name": "银色"
+                            },
+                            {
+                                "id": "1002",
+                                "name": "黑色"
+                            },
+                            {
+                                "id": "1003",
+                                "name": "白色"
+                            }
+                        ],
+                        "k_s": "s1",
+                        "count": 3
+                    },
+                    {
+                        "k": "内存",
+                        "v": [
+                            {
+                                "id": "2001",
+                                "name": "64G"
+                            },
+                            {
+                                "id": "2002",
+                                "name": "128G"
+                            },
+                            {
+                                "id": "2003",
+                                "name": "218G"
+                            }
+                        ],
+                        "k_s": "s2",
+                        "count": 3
+                    }
+                ],
+                "list": [
+                    {
+                        "id": 222,
+                        "price": 199000,
+                        "s1": "1001",
+                        "s2": "2001",
+                        "stock_num": 110,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 223,
+                        "price": 299000,
+                        "s1": "1001",
+                        "s2": "2002",
+                        "stock_num": 244,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 224,
+                        "price": 399000,
+                        "s1": "1001",
+                        "s2": "2003",
+                        "stock_num": 332,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 225,
+                        "price": 199000,
+                        "s1": "1002",
+                        "s2": "2001",
+                        "stock_num": 21,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 226,
+                        "price": 299000,
+                        "s1": "1002",
+                        "s2": "2002",
+                        "stock_num": 334,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 227,
+                        "price": 399000,
+                        "s1": "1002",
+                        "s2": "2003",
+                        "stock_num": 56,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 228,
+                        "price": 199000,
+                        "s1": "1003",
+                        "s2": "2001",
+                        "stock_num": 221,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 229,
+                        "price": 299000,
+                        "s1": "1003",
+                        "s2": "2002",
+                        "stock_num": 110,
+                        "goods_id": 1000008
+                    },
+                    {
+                        "id": 230,
+                        "price": 399000,
+                        "s1": "1003",
+                        "s2": "2003",
+                        "stock_num": 899,
+                        "goods_id": 1000008
+                    }
+                ],
+                "price": "1990",
+                "stock_num": 30000,
+                "none_sku": false
+            },
+            "goods": {
+                "title": "小米9 SE骁龙712超广角4800万三摄拍照智能手机",
+                "picture": "static/images/xiaomi/xiaomi01.jpg"
+            },
+            "goodsId": "1000008",
+            "quota": 0,
+            "quotaUsed": 999
+        }
+    }
+}

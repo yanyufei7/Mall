@@ -1,0 +1,69 @@
+{
+	"ret": true,
+	"data":{
+            "recommendlist":[{
+                "id":"10001",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米9 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":1990,
+                "sold":999
+            },{
+                "id":"10002",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10003",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10004",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10005",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10006",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10007",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10008",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            },{
+                "id":"10009",
+                "smallname":"小米9 SE骁龙712",
+                "name":"小米8 SE骁龙712超广角4800万三摄拍照智能手机",
+                "imgUrl":"static/images/xiaomi/xiaomi01.jpg",
+                "price":2990,
+                "sold":999
+            }]
+    }
+}
