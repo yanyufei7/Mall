@@ -34,7 +34,6 @@ npm run dev
 
 ## 截图
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E9%A6%96%E9%A1%B5.png)
-
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E8%B4%AD%E7%89%A9%E8%BD%A6.png)
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95.png)
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E7%9F%AD%E4%BF%A1%E7%99%BB%E5%BD%95.png)
