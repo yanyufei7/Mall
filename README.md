@@ -17,7 +17,7 @@ npm run dev
 - Vant
 ## 模块
 * [x] 首页
-* [x] 账号登陆
+* [x] 账号登录
 * [x] 短信登录
 * [x] 个人中心
 * [x] 城市搜索
@@ -26,6 +26,7 @@ npm run dev
 * [x] 商品详情
 * [x] 购物车
 * [x] 订单
+* [x] 订单分类
 
 ## 截图
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E9%A6%96%E9%A1%B5.png)

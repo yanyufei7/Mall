@@ -11,6 +11,13 @@ import City from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 import Login from '@/pages/login/Login'
 import Entry from '@/pages/entry/Entry'
+import OList from '@/pages/olist/OList'
+//子组件
+import AllOrder from '@/pages/olist/components/AllOrder'
+import PayOrder from '@/pages/olist/components/PayOrder'
+import SendOrder from '@/pages/olist/components/SendOrder'
+import GetOrder from '@/pages/olist/components/GetOrder'
+import CommentOrder from '@/pages/olist/components/CommentOrder'
 
 Vue.use(Router)
 
@@ -65,6 +72,32 @@ export default new Router({
       path: '/entry',
       name: 'Entry',
       component: Entry
+    },
+    {
+      path: '/olist',
+      name: 'OList',
+      component: OList,
+      children:[{
+            path: '/olist/all',
+            name: 'all',
+            component: AllOrder
+          },{
+            path: '/olist/pay',
+            name: 'pay',
+            component: PayOrder
+          },{
+            path: '/olist/send',
+            name: 'send',
+            component: SendOrder
+          },{
+            path: '/olist/get',
+            name: 'get',
+            component: GetOrder
+          },{
+            path: '/olist/comment',
+            name: 'comment',
+            component: CommentOrder
+      }]
     }
   ],scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
