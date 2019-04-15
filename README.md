@@ -39,4 +39,6 @@ npm run dev
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E5%95%86%E5%93%81%E6%8E%A8%E8%8D%90.png)
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E5%95%86%E5%93%81%E5%88%86%E7%B1%BB.png)
 ![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.png)
+![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E8%AE%A2%E5%8D%95%E5%88%86%E7%B1%BB01.png)
+![image](https://github.com/yanyufei7/Mall/blob/master/pictures/%E8%AE%A2%E5%8D%95%E5%88%86%E7%B1%BB02.png)
 
