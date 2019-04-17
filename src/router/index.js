@@ -46,7 +46,8 @@ export default new Router({
     {
       path: '/order',
       name: 'Order',
-      component: Order
+      component: Order,
+      meta:{requireAuth:true},
     },
     {
       path: '/person',
@@ -77,29 +78,36 @@ export default new Router({
       path: '/olist',
       name: 'OList',
       component: OList,
+      meta:{requireAuth:true},
       children:[{
             path: '/olist/all',
             name: 'all',
+            meta:{requireAuth:true},
             component: AllOrder
           },{
             path: '/olist/pay',
             name: 'pay',
+            meta:{requireAuth:true},
             component: PayOrder
           },{
             path: '/olist/send',
             name: 'send',
+            meta:{requireAuth:true},
             component: SendOrder
           },{
             path: '/olist/get',
             name: 'get',
+            meta:{requireAuth:true},
             component: GetOrder
           },{
             path: '/olist/comment',
             name: 'comment',
+            meta:{requireAuth:true},
             component: CommentOrder
       }]
     }
-  ],scrollBehavior (to, from, savedPosition) {
+  ],
+  scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   }
 })

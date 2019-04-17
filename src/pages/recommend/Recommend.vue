@@ -13,8 +13,6 @@ import CommonFooter from '../../components/footer/Footer'
 import CommonTabbar from '../../components/tabBar/TabBar'
 import CommonLoading from '../../components/loading/Loading'
 
-//引入axios调用HTTP请求
-import axios from 'axios'
 export default {
   name: 'Recommend',
   components:{
@@ -31,7 +29,7 @@ export default {
   },
   methods:{
     getRecommendList:function(){
-      axios.get('/api/recommend.json').then(this.getRecommendListSucc)
+      this.axios.get('/api/recommend.json').then(this.getRecommendListSucc)
     },
     getRecommendListSucc:function(res){
       res=res.data

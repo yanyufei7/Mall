@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper" >
-        <van-button v-if="user" class="btn" @click="handleLogoutClick" plain type="danger">退出登录</van-button>
+        <van-button v-if="userno" class="btn" @click="handleLogoutClick" plain type="danger">退出登录</van-button>
         <van-button v-else class="btn" @click="handleLoginClick" plain type="danger">登录</van-button>
     </div>
 </template>
@@ -11,16 +11,16 @@ import {mapState,mapMutations} from "vuex"
 export default {
     name:'LogOut',
     computed:{
-        ...mapState(['user'])
+        ...mapState(['userno']),
+        ...mapState(['token'])
     },
     methods:{
         handleLogoutClick:function(){
-            this.logout(this.user);
-            console.log('已退出');
+            this.logout();
             this.$toast('已退出');
         },
         handleLoginClick:function(){
-            this.$router.push('./login')
+            this.$router.push({path:'/login',query:{redirect:this.$route.fullPath}})
         },
         ...mapMutations(['logout'])
     }

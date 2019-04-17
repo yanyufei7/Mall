@@ -10,7 +10,6 @@
 
 <script>
 import { SubmitBar } from 'vant';
-import {mapState} from 'vuex'
 export default {
     name:'Footer',
     data(){
@@ -18,19 +17,12 @@ export default {
             checked:true
         }
     },
-    computed:{
-        ...mapState(['user'])
-    },
     props:{
         allSum:Number
     },
     methods:{
         handleSubmitClick:function(){
-            if(this.user==null){
-                this.$router.push('/login')
-            }else{
-                this.$router.push('/order')
-            }
+            this.$router.push('/order')
         }
     }
 }

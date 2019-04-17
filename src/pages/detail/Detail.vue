@@ -28,8 +28,6 @@ import DetailList from './components/List'
 import DetailCart from './components/Cart'
 import CommonTop from '../../components/top/Top'
 import CommonFooter from '../../components/footer/Footer'
-//引入axios调用HTTP请求
-import axios from 'axios'
 export default {
     name:'Detail',
     data(){
@@ -54,7 +52,7 @@ export default {
     },
     methods:{
         getDetailinfo:function(){
-            axios.get('/api/good.json').then(this.getDetailInfoSucc)
+            this.axios.get('/api/good.json').then(this.getDetailInfoSucc)
         },
         getDetailInfoSucc:function(res){
             res=res.data

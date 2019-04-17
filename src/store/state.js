@@ -7,12 +7,20 @@ try{
 
 let localUser=''
 try{
-    if(localStorage.user){
-        localUser=localStorage.user
+    if(localStorage.userno){
+        localUser=localStorage.userno
+    }
+}catch(e){}
+
+let localToken=''
+try{
+    if(localStorage.token){
+        localToken=localStorage.token
     }
 }catch(e){}
 
 export default{
     city:defaultCity,
-    user:localUser
+    userno:localUser,
+    token:localToken
 }

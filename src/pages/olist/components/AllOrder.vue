@@ -35,8 +35,6 @@
 </template>
 
 <script>
-//引入axios调用HTTP请求
-import axios from 'axios'
 export default {
     name:'AllOrder',
     data(){
@@ -46,7 +44,7 @@ export default {
     },
     methods:{
         getOrderList:function(){
-            axios.get('/api/orderlist.json').then(this.getOrderListSucc)
+            this.axios.get('/api/orderlist.json').then(this.getOrderListSucc)
         },
         getOrderListSucc:function(res){
             res=res.data

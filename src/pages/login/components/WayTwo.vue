@@ -52,9 +52,15 @@ export default {
         },
         handleSubmitClick:function(){
             if(this.loginInfo.name!=null&&this.loginInfo.pwd!=null){
-                this.login('15876572342');
+                this.axios.get('/api/info.json').then(this.getLoginSucc)          
+            }
+        },
+        getLoginSucc:function(res){
+            res=res.data
+            if(res.ret&&res.data){
+                this.login(res.data.info);
                 this.$notify({message:'登录成功',duration:1000,background:'orange'});
-                this.$router.push('./person')
+                this.$router.push(this.$route.query.redirect);
             }
         },
         ...mapMutations(['login'])

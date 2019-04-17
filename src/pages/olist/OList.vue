@@ -9,8 +9,7 @@
 <script>
 import OlistHeader from './components/Header'
 import CommonTabbar from '../../components/tabBar/TabBar'
-//引入axios调用HTTP请求
-import axios from 'axios'
+
 export default {
     name:'OList',
     components:{

@@ -71,7 +71,6 @@ export default {
     methods:{
         handleSelectClick:function(city){
             this.changeCity(city)
-            console.log('1111')
             this.$router.push('/')
         },
         ...mapMutations(['changeCity'])

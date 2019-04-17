@@ -21,8 +21,6 @@ import HomeList from './components/List'
 import CommonTop from '../../components/top/Top'
 import CommonFooter from '../../components/footer/Footer'
 import CommonTabbar from '../../components/tabBar/TabBar'
-//引入axios调用HTTP请求
-import axios from 'axios'
 export default {
   name: 'Home',
   components:{
@@ -42,7 +40,7 @@ export default {
   },
   methods:{
         getHomeList:function(){
-            axios.get('/api/home.json').then(this.getHomeListSucc)
+            this.axios.get('/api/home.json').then(this.getHomeListSucc)
         },
         getHomeListSucc:function(res){
             res=res.data

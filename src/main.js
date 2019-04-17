@@ -19,8 +19,11 @@ import store from './store'
 import 'babel-polyfill'
 //图片延时加载
 import VueLazyload from 'vue-lazyload'
+//引入axios调用HTTP请求
+import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.prototype.axios=axios //使用axios
 fastClick.attach(document.body) //绑定到body页面
 Vue.use(VueAwesomeSwiper)//使用轮播图
 Vue.use(Vant);    //使用Vant组件
@@ -34,3 +37,52 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+//路由拦截
+router.beforeEach((to, from, next) => {
+  if(to.meta.requireAuth){
+    if(store.state.token){
+      next();
+    }else{
+      next({
+        path:'/login',
+        query:{redirect:to.fullPath}
+      });
+    }
+  }else{
+    next();
+  }
+})
+
+//HTTP请求拦截器
+axios.interceptors.request.use(
+  config=>{
+    //如果token存在，则在每个http Header上加上token
+    if(store.state.token){
+      config.headers.Authorization=store.state.token
+    }
+    return config
+  },
+  err=>{
+    return Promise.reject(err);
+  }
+)
+//HTTP响应拦截器
+axios.interceptors.response.use(
+  response=>{
+    return response;
+  },
+  error=>{
+    if(error.response){
+      switch(error.response.status){
+        //返回10002表示token已过期，则清除token，并跳转到登录页面
+        case 10002:
+          store.commit('logout');
+          router.replace({
+            path:'/login',query:{redirect:router.currentRoute.fullPath}
+          })
+      }
+    }
+    return Promise.reject(error.response.data);
+  }
+)

@@ -12,8 +12,7 @@ import OrderHeader from './components/Header'
 import OrderList from './components/List'
 import OrderFooter from './components/Footer'
 import OrderPay from './components/Pay'
-//引入axios调用HTTP请求
-import axios from 'axios'
+
 export default {
     name:'Order',
     components:{
@@ -30,7 +29,7 @@ export default {
     },
     methods:{
         getOrderInfo:function(){
-            axios.get('/api/order.json').then(this.getOrderInfoSucc)
+            this.axios.get('/api/order.json').then(this.getOrderInfoSucc)
         },
         getOrderInfoSucc:function(res){
             res=res.data

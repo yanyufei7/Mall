@@ -1,9 +1,9 @@
 <template>
     <div class="header">
-        <div class="user-info" v-if="user">
+        <div class="user-info" v-if="userno">
             <img class="user-img" src="../../../assets/images/头像 男孩.png"/>
             <div class="user-mobile">
-                <div class="mobile-txt">{{this.user}}</div>
+                <div class="mobile-txt">{{this.userno}}</div>
                 <div class="mobile-icon iconfont">&#xe6a6;</div>
             </div>
             <div class="more iconfont">&#xe628;</div>
@@ -20,7 +20,7 @@ import {mapState} from 'vuex'
 export default {
     name:'Header',
     computed:{
-        ...mapState(['user'])
+        ...mapState(['userno'])
     },
     methods:{
         handleLoginClick:function(){

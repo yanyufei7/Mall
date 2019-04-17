@@ -10,8 +10,6 @@
 import SearchLeft from './components/Left'
 import SearchRight from './components/Right'
 import CommonTabbar from '../../components/tabBar/TabBar'
-//引入axios组件进行HTTP请求
-import axios from 'axios'
 export default {
   name: 'Search',
   components:{
@@ -27,7 +25,7 @@ export default {
   },
   methods:{
     getCategories:function(){
-      axios.get('/api/category.json').then(this.handelGetCategoriesSucc)
+      this.axios.get('/api/category.json').then(this.handelGetCategoriesSucc)
     },
     handelGetCategoriesSucc(res){
       res=res.data;

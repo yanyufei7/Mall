@@ -12,8 +12,6 @@ import CartHeader from './components/Header'
 import CartList from './components/List'
 import CartFooter from './components/Footer'
 import CommonTabbar from '../../components/tabBar/TabBar'
-//引入axios组件进行HTTP请求
-import axios from 'axios'
 export default {
     name:'Cart',
     data(){
@@ -33,7 +31,7 @@ export default {
             this.allSum=val;
         },
         getCartInfo:function(){
-            axios.get('/api/cart.json').then(this.handelGetCartInfoSucc)
+            this.axios.get('/api/cart.json').then(this.handelGetCartInfoSucc)
         },
         handelGetCartInfoSucc:function(res){
             res=res.data;
